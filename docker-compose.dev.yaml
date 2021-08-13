@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  bot:
+    build: .
+    volumes:
+      - ./src:/app/
+    environment: 
+      DEBUG: 'true'
+    restart: "no"

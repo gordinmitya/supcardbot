@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  bot:
+    image: gordinmitya/supcardbot
+    volumes:
+      - ./data:/data
+    restart: always
+    env_file: secret.env
